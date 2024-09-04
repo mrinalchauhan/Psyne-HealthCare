@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { links } from "@/app/constants/appdata";
 import { usePathname } from "next/navigation";  // usePathname is a hook provided by the Next.js framework, typically used in the context of React applications. This hook allows you to access the current URL's pathname within your component. The pathname is the part of the URL that follows the domain name and excludes query parameters and hash fragments.
+import Image from 'next/image';
+
 const Navbar=()=>{
     const pathname=usePathname();
     const [isMenu, setisMenu]=useState(false);
@@ -12,7 +14,7 @@ const Navbar=()=>{
      <>
      <div className="h-16  flex justify-between items-center md:px-[10%]">
 
-        <Link href="/" className=" p-2 text-lg"><img src="/logo.jpg" alt="logo" width={100} height={70}></img></Link>
+        <Link href="/" className=" p-2 text-lg"><Image src="/logo.jpg" alt="logo" width={100} height={70}></Image></Link>
 
         <div className="md:hidden flex flex-col gap-1 pr-5" onClick={()=>setisMenu(!isMenu)}>
             <div className="w-5 h-0.5 bg-black"></div>

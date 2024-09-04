@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const ProdInfo = () => {
     return (
@@ -19,7 +20,7 @@ const ProdInfo = () => {
 
                     {/* Column 2 - Image */}
                     <div className="flex items-center justify-center">
-                        <img
+                        <Image
                             src="/prod2.jpg" // Replace with the actual image path
                             alt="Product Image"
                             className="w-1/2 h-auto rounded-lg "

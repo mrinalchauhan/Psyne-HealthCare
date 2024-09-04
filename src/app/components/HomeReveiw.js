@@ -4,6 +4,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'; 
 import { clientcarousel } from '@/app/constants/appdata'; 
+import Image from 'next/image';
 
 const HomeReview = () => {
     return (
@@ -30,7 +31,7 @@ const HomeReview = () => {
                                             <CardDescription>{client.description}</CardDescription>
                                         </CardHeader>
                                         <CardContent>
-                                            <img
+                                            <Image
                                                 src={client.imgUrl}
                                                 alt={client.title}
                                                 className="w-full h-48 object-cover rounded-lg"

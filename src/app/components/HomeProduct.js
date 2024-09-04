@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const HomeProduct = () => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -17,7 +18,7 @@ const HomeProduct = () => {
                     {/* Column 1 - Medicine Picture */}
                     <div className="flex-1 flex items-center justify-center py-5">
                         
-                        <img
+                        <Image
                             src="/prod1.png" // Replace with actual image path
                             alt="Medicine"
                             className="w-auto h-auto object-cover rounded-lg "

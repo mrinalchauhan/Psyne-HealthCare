@@ -52,6 +52,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
+import Image from 'next/image';
 
 // Import the clientcarousel array
 import { clientcarousel } from '@/app/constants/appdata';
@@ -86,7 +87,7 @@ const HomeReview = () => {
             >
               <div className="bg-white shadow-lg p-6 rounded-lg flex flex-col items-center">
                 <p className="text-gray-700 mb-4 text-center">{client.description}</p>
-                <img
+                <Image
                   src={client.imgUrl}
                   alt={client.title}
                   className="w-24 h-24 rounded-full mb-4"
