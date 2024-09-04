@@ -8,7 +8,7 @@ import FullScreenVideo from "./components/FrontVedio";
 import HomeAbout from "./components/HomeAbout";
 import HomeReview from "./components/HomeReveiw";
 import HomeExpert from "./components/HomeExpextsSection";
-import Marquee from "@/components/magicui/marquee";
+//import Marquee from "@/components/magicui/marquee";
 export default function Home() {
   return (
     <>
@@ -18,7 +18,6 @@ export default function Home() {
        <HomeInfo/>
        <HomeProduct/>
        <HomeReview/>
-       {/* <Marquee/> */}
        <HomeExpert/>
        <Events/>
 

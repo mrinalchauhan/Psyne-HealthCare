@@ -9,6 +9,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"; // Adjust the path based on your project structure
 import { productCard } from '@/app/constants/appdata'; // Adjust the path based on your project structure
+import Image from 'next/image';
 import { FaSearch } from 'react-icons/fa'; // Ensure you have react-icons installed
 
 const ProductCard = () => {
@@ -39,13 +40,13 @@ const ProductCard = () => {
                             All Categories
                         </button>
                         <button
-                            className={`px-4 py-2 px-4 rounded-full ${filter === 'Syrup' ? 'bg-blue-500 text-white' : 'bg-white border border-gray-300'}`}
+                            className={`px-4 py-2 rounded-full ${filter === 'Syrup' ? 'bg-blue-500 text-white' : 'bg-white border border-gray-300'}`}
                             onClick={() => setFilter('Syrup')}
                         >
                             Syrup
                         </button>
                         <button
-                            className={`px-4 py-2 px-4 rounded-full ${filter === 'Tablet' ? 'bg-blue-500 text-white' : 'bg-white border border-gray-300'}`}
+                            className={`px-4 py-2 rounded-full ${filter === 'Tablet' ? 'bg-blue-500 text-white' : 'bg-white border border-gray-300'}`}
                             onClick={() => setFilter('Tablet')}
                         >
                             Tablet
@@ -57,11 +58,11 @@ const ProductCard = () => {
                         <input
                             type="text"
                             placeholder="Search..."
-                            className="w-full p-4 pl-10 border-2 border-blue-400 shadow-md text-white  rounded-full "
+                            className="w-full p-4 pl-10 border-2 border-blue-400 shadow-md text-black rounded-full"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
-                        <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white" />
+                        <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black" />
                     </div>
                 </div>
 
@@ -71,9 +72,11 @@ const ProductCard = () => {
                         filteredProducts.map((product) => (
                             <Card key={product.id} className="border-1 border-black shadow-2xl">
                                 <CardHeader>
-                                    <img 
+                                    <Image 
                                         src={product.imgUrl} 
                                         alt={product.title} 
+                                        width={500}  // Adjust these values based on the actual size of your images
+                                        height={300} 
                                         className="w-full h-48 object-cover rounded-lg"
                                     />
                                     <CardTitle className="text-blue-700 p-5 text-center">{product.title}</CardTitle>

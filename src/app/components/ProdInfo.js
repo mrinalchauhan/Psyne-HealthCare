@@ -23,7 +23,9 @@ const ProdInfo = () => {
                         <Image
                             src="/prod2.jpg" // Replace with the actual image path
                             alt="Product Image"
-                            className="w-1/2 h-auto rounded-lg "
+                            width={500}  // Set width according to your image
+                            height={500}  // Set height according to your image
+                            className="w-1/2 h-auto rounded-lg"
                         />
                     </div>
                     

@@ -12,16 +12,18 @@ const HomeProduct = () => {
     return (
         <section className="bg-gray-100 py-12">
             <div className="container mx-auto px-4">
-            <h1 className="lg:text-4xl md:text-3xl text-3xl mb-2 p-5 font-bold text-black font-serif text-center "> OUR PRODUCTS</h1>
+                <h1 className="lg:text-4xl md:text-3xl text-3xl mb-2 p-5 font-bold text-black font-serif text-center">
+                    OUR PRODUCTS
+                </h1>
                 <div className="flex flex-col md:flex-row gap-5">
-               
                     {/* Column 1 - Medicine Picture */}
                     <div className="flex-1 flex items-center justify-center py-5">
-                        
                         <Image
                             src="/prod1.png" // Replace with actual image path
                             alt="Medicine"
-                            className="w-auto h-auto object-cover rounded-lg "
+                            width={400} // Specify width
+                            height={300} // Specify height
+                            className="object-cover rounded-lg"
                         />
                     </div>
 
@@ -69,7 +71,6 @@ const HomeProduct = () => {
                             </Link>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

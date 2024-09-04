@@ -22,9 +22,10 @@ const Events = () => {
                                 <Image 
                                     src={event.imgUrl} 
                                     alt={event.title} 
-                                    width={500}  // Adjust these values based on the actual size of your images
-                                    height={300} 
+                                    width={500}  // Set the appropriate width for the image
+                                    height={300} // Set the appropriate height for the image
                                     className="w-full h-48 object-cover rounded-lg"
+                                    layout="responsive" // Optionally ensure responsiveness
                                 />
                                 <CardTitle>{event.title}</CardTitle>
                                 <CardDescription>{event.description}</CardDescription>

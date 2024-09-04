@@ -3,12 +3,8 @@ import Image from 'next/image';
 const VisionSection1 = () => {
   return (
     <div className="flex justify-center p-5">
-      <div className="max-w-7xl w-full flex flex-col md:flex-row gap-8">
-        
-        
-
-        {/* First Column */}
-        
+      <div className="max-w-7xl w-full flex flex-col md:flex-row gap-8">       
+        {/* First Column */}      
         <div className="flex-1 bg-white border border-gray-400 shadow-2xl p-6 flex flex-col justify-between">
           <div>
           <h2 className="lg:text-4xl text-3xl text-center font-mono font-bold mb-4">Our Vision</h2>
