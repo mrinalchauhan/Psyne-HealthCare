@@ -7,7 +7,7 @@ const Footer = () => {
         
         {/* Logo Column */}
         <div>
-          <h2 className="text-xl font-bold mb-4">Your Logo</h2>
+          <h2 className="text-xl font-bold mb-4">Our Logo</h2>
           <Link href="/" className=" p-2 text-lg"><img src="/logo.jpg" alt="logo" width={100} height={70}></img></Link>
         </div>
         
@@ -16,16 +16,16 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul>
             <li className="mb-2">
-              <a href="#" className="hover:underline">Home</a>
+              <a href="/" className="hover:underline">Home</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="hover:underline">About</a>
+              <a href="/AboutUs" className="hover:underline">About</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="hover:underline">Services</a>
+              <a href="/Products" className="hover:underline">Products</a>
             </li>
             <li className="mb-2">
-              <a href="#" className="hover:underline">Contact</a>
+              <a href="/EventAndNews" className="hover:underline">Events And News</a>
             </li>
           </ul>
         </div>

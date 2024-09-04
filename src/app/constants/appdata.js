@@ -222,7 +222,6 @@ export const clientcarousel = [
   },
 ];
 
-// appdata.js
 export const AboutCardData1 = [
   {
       id: 1,
@@ -260,5 +259,46 @@ export const AboutCardData1 = [
   name: 'Member name',
   description: 'This is a short description .'
 },
-  // Add more data as needed
+
+];
+
+
+export const AboutFounderCard = [
+  {
+      id: 1,
+      imgUrl: "/founder.jpg",
+      name: 'Member name',
+      description: 'This is a short description of Product 1.'
+  },
+  {
+      id: 2,
+      imgUrl: "/founder.jpg",
+      name: 'Member name',
+      description: 'This is a short description '
+  },
+  {
+      id: 3,
+      imgUrl: "/founder.jpg",
+      name: 'Member name',
+      description: 'This is a short description '
+  },
+  {
+    id: 3,
+    imgUrl: "/founder.jpg",
+    name: 'Member name',
+    description: 'This is a short description '
+},
+{
+  id: 3,
+  imgUrl: "/founder.jpg",
+  name: 'Member name',
+  description: 'This is a short description .'
+},
+{
+  id: 3,
+  imgUrl: "/founder.jpg",
+  name: 'Member name',
+  description: 'This is a short description .'
+},
+
 ];

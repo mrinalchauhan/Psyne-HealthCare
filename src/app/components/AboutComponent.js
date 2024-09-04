@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const AboutXYZ = () => {
   return (
-    <div className="about-xyz-container p-8">
+    <div className="about-xyz-container p-8 px-2">
       <h2 className="md:text-4xl lg:text-5xl text-center font-bold mb-6 font-mono">About Pysne Group</h2>
       <div className="flex flex-col md:flex-row gap-8">
         {/* First Column */}
