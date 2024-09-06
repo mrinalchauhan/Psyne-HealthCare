@@ -10,7 +10,7 @@ const AboutTeam = () => {
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.2, // Stagger each child by 0.2 seconds
+                staggerChildren: 0.2,
             },
         },
     };

@@ -1,23 +1,35 @@
+
+import { FaHome } from "react-icons/fa";
+import { TbMedicineSyrup } from "react-icons/tb";
+import { MdDescription } from "react-icons/md";
+import { MdEventAvailable } from "react-icons/md";
+
 export const links = [
     {
       link: "/",
       text: "HOME",
       exact: true,
+      icon: <FaHome />,
     },
     {
       link: "/AboutUs",
       text: "ABOUT US",
       exact: true,
+      icon:<MdDescription />,
+     
     },
     
     {
       link: "/Products",
       text: "PRODUCT",
+      icon: <TbMedicineSyrup />,
+
     },
     
     {
       link: "/EventsAndNews",
       text: "EVENTS & NEWS",
+      icon : <MdEventAvailable />,
     },
   ];
 

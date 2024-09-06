@@ -10,7 +10,7 @@ import AboutFounder from "../components/AboutFounder";
 const AboutUs = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Each section should be wrapped in responsive containers */}
+      
       <section className="mb-12">
         <AboutImage />
       </section>

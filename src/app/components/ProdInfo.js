@@ -49,7 +49,7 @@ const ProdInfo = () => {
                         transition={{ duration: 1 }}   // Animation duration
                     >
                         <Image
-                            src="/prod2.jpg" // Replace with the actual image path
+                            src="/prod2.png" // Replace with the actual image path
                             alt="Product Image"
                             width={500}      // Set width according to your image
                             height={500}     // Set height according to your image

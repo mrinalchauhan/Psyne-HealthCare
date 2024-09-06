@@ -5,8 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
-import { motion } from 'framer-motion'; // Import Framer Motion
-import { AboutFounderCard } from '@/app/constants/appdata'; // Import your data
+import { motion } from 'framer-motion'; 
+import { AboutFounderCard } from '@/app/constants/appdata'; 
 
 SwiperCore.use([Navigation, Pagination]);
 

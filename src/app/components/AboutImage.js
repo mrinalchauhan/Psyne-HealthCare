@@ -27,9 +27,9 @@ const AboutImage = () => {
                 <Image 
                     src="/about.jpeg"
                     alt="About Us" 
-                    layout="fill" // Use layout fill for better positioning with absolute
-                    objectFit="cover" // Ensure the image covers the container
-                    priority // Prioritize loading
+                    layout="fill"
+                    objectFit="cover" 
+                    priority 
                     className="rounded-sm border-1 border-black shadow-2xl"
                 />
             </motion.div>

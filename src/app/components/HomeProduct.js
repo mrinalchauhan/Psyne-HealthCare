@@ -54,10 +54,10 @@ const HomeProduct = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <Image
-                            src="/prod2.jpg" // Replace with actual image path
+                            src="/prod2.png" 
                             alt="Medicine"
-                            width={400} // Specify width
-                            height={300} // Specify height
+                            width={400} 
+                            height={300}
                             className="object-cover rounded-lg"
                         />
                     </motion.div>
