@@ -1,7 +1,9 @@
+// app/layout.js (or similar)
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/app/components/Navbar"
+import Navbar from "@/app/components/Navbar";
 import Footer from "./components/Footer";
+import PageTransition from "@/app/components/PageTransition"; // Import PageTransition
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +17,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        {children}
-        <Footer/>
+        <PageTransition>{children}</PageTransition> {/* Wrap children with PageTransition */}
+        <Footer />
       </body>
     </html>
   );
